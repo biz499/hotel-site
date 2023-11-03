@@ -27,7 +27,11 @@ iframe:hover {
   pointer-events: auto;
 }
 
-    
+@media (max-width: 767px) {
+  .my-swiper {
+    max-height: 80vh; /* 80% of the viewport height */
+  }
+}
     </style>
   </head>
   <body>
@@ -138,7 +142,7 @@ iframe:hover {
               <!-- Classic slider-->
               <section class="section">
                 <!-- Swiper -->
-                <div class="swiper-container swiper-slider swiper-style-2" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="slide" data-direction="vertical">
+                <div class="swiper-container swiper-slider swiper-style-2 my-swiper" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="slide" data-direction="vertical">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide" data-slide-bg="images/slide-01.jpg">
                       <div class="swiper-slide-caption">
